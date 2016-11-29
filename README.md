@@ -7,6 +7,7 @@ This code enable use the ADAPTED DATEPICKER into Angular 2.2.0
 # Guidances
 Once download the entire directory, try this:
 
-npm install
-npm start
-http://localhost:3000
+npm install<br>
+npm start<br>
+http://localhost:3000<br>
+
