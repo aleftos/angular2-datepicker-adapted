@@ -1,11 +1,9 @@
 /**
  * Created by Tareq Boulakjar. from angulartypescript.com
+ * Modified by Luis Sanabria from arquetic.org
  */
-// <reference path="/typings/moment/moment.d.ts" />
 
-//import * as moment_ from 'moment';
-//const moment:moment.MomentStatic = (<any>moment_)['default'] || moment_;
-
+declare var moment: any;
 
 export class DateFormatter {
     public format(date:Date, format:string):string {
