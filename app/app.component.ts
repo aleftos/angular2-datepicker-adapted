@@ -9,9 +9,10 @@ declare var moment: any;
 @Component({
   selector: 'my-app',
   template:`
-    <h3>Angular 2 Datepicker Example</h3>
+    <h3>Angular 2 Datepicker (adapted) Example</h3>
     <div>
       <p>The current selected date is: <span *ngIf="currentDate">{{ getDate() | date:'fullDate'}}</span></p>
+      <p>The current selected date is: <span *ngIf="currentDate">{{ getDate() | date:'yyyy-MM-dd'}}</span></p>
       <button type="button" class="btn btn-sm btn-info" (click)="setToday()">Set The Current Date (Today)</button>
       <button type="button" class="btn btn-sm btn-default btn-info" (click)="setADate();">Set this date : 2020-02-02</button>
       <div style="width: 350px;">
