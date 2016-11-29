@@ -4,6 +4,8 @@ import { DayPicker } from './daypicker';
 import { MonthPicker } from './monthpicker';
 import { YearPicker } from './yearpicker';
 
+declare var moment: any;
+
 @Component({
   selector: 'my-app',
   template:`
@@ -57,7 +59,6 @@ export class AppComponent {
   //set your date
   private setADate() {
     this.currentDate = moment('2020-02-02', 'YYYY-MM-DD').toDate();
-    //this.currentDate = new Date("2020-02-02".replace( /(\d{4})-(\d{2})-(\d{2})/, "$3/$1/$2"));
   }
   // get the current selected date
   public getDate():number {
